@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.app{
+    max-width: 370px;
+    width: 100%;
+    margin: auto;
+}
+header{
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: bisque;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+}
+main{ 
+    padding: 10px;
+}
+main .inputArea{
+    display: grid;
+    grid-template-columns: 80% auto;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.inputArea .input{
+    border: 1px solid black;
+    padding: 10px;
+}
+.inputArea button{
+    cursor: pointer;
+}
+main .taskList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+.taskList .task{
+    display: grid;
+    grid-template-columns: 80% auto;
+    padding: 10px;
+    align-items: center;
+    background-color: bisque;
+}
+.task .description{
+    display: flex;
+    gap: 10px;
+}
+
+.task .controls{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.controls button{
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main #message{
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%);
+    padding: 5px;
+    color: white;
+    background-color: gray;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.project-info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
